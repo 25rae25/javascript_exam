@@ -43,3 +43,39 @@ function solution(strlist) {
 function solution(n) {
 	return Math.floor((n - 1) / 7) + 1;
 }
+
+// 문자열안에 문자열
+function solution(str1, str2) {
+    if(str1.includes(str2)) {
+        return 1
+    } else {
+        return 2
+    }
+}
+// 삼항연상자 방법
+function solution(str1, str2) {
+	return str1.includes(str2) ? 1 : 2;
+  }
+
+// 짝수는 싫어요
+function solution(n) {
+    var answer = [];
+    for(let i = 1; i<= n; i++)
+        if(i % 2=== 1) answer.push(i);
+    return answer;
+}
+
+// 짝수와 홀수
+function solution(num) {
+    return num % 2 === 0 ? "Even" : "Odd"
+}
+
+// 평균 구하기
+function solution(arr) {
+    let result = 0
+    let num = arr.length
+    for(let i = 0; i < arr.length; i++) {
+        result += arr[i] / num
+    }
+    return result
+}
