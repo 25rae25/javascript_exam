@@ -79,3 +79,28 @@ function solution(arr) {
     }
     return result
 }
+
+// 자릿수 더하기
+function solution(n) {
+  var a = (n + '').split('');
+  var b = 0;
+  for(var i = 0; i < a.length; ++i) {
+      b += parseInt(a[i]);
+  }
+  return b;
+  //return n.toString().split('').reduce((a, b) => (a * 1) + (b * 1));
+}
+
+// 김서방 찾기
+function solution(seoul) {
+  let x = 0; // 김서방의 위치 (인덱스) 값을 저장
+ 
+  for( let i = 0; i < seoul.length; i++ ) {
+      if( seoul[i] === "Kim" ) {
+          x = i;
+          break;
+      }
+  }
+
+ return `김서방은 ${x}에 있다`
+}
