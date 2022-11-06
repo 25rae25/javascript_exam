@@ -104,3 +104,41 @@ function solution(seoul) {
 
  return `김서방은 ${x}에 있다`
 }
+
+// 가운데 글자 가져오기
+function solution(s) {
+  let center = Math.floor( s.length / 2 )
+  let answer = s[center]
+  
+  if(s.length % 2 === 0) {
+    answer = s[center - 1] + answer
+  }
+  return answer
+}
+
+
+// 약수의 합
+function solution(n) {
+  let answer = 0;
+  
+  for( let i = 1; i <= n; i++ ) {
+      if( n % i === 0 ) {
+          answer += i;
+      }
+  }
+  
+  return answer;
+}
+
+// 자연수 뒤집어 배열로 만들기
+function solution(n) {
+  const answer = [];
+  n = String(n);
+
+  for( let i = 0; i < n.length; i++ ) {
+      answer.push( Number(n[i]) )
+  }
+  answer.reverse();
+  
+  return answer;
+}
