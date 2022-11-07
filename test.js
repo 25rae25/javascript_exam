@@ -142,3 +142,30 @@ function solution(n) {
   
   return answer;
 }
+
+// 핸드폰 번호 가리기
+function solution(phone_number) {
+    
+  let result = ""
+  
+  result = result.padStart( phone_number.length - 4, "*" );
+  result += phone_number.slice( phone_number.length - 4 );
+  
+  return result
+}
+
+// 문자열 내 p와 y의 개수
+function solution(s) {
+  s = s.toLowerCase()
+  let p = 0
+  let y = 0
+
+  for(let i = 0; i < s.length; i++) {
+    if(s[i] === 'y') {
+      y++
+    } else if(s[i] === 'p') {
+      p++
+    }
+  }
+  return p === y
+}
