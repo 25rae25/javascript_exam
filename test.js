@@ -267,3 +267,33 @@ function solution(n) {
   }
   return answer
 }
+
+// 2016년
+const month = {
+  1 : 31,
+  2 : 29,
+  3 : 31,
+  4 : 30,
+  5 : 31,
+  6 : 30,
+  7 : 31,
+  8 : 31,
+  9 : 30,
+  10 : 31,
+  11 : 30,
+  12 : 31
+}
+const week = [ 'FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU' ];
+
+function solution(a, b) {
+  // 총 일수를 저장하는 변수
+  let answer = 0;
+  
+  for( let i = 1; i < a; i++ ) {
+      answer += month[i];
+  }
+  answer += (b - 1);
+  answer = week[ days % 7 ]
+  
+  return answer;
+}
