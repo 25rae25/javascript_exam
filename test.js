@@ -346,3 +346,15 @@ function solution(d, budget) {
   }
   return answer.length;
 }
+
+// 없는 숫자 더하기
+function solution(numbers) {
+  let result = 0;
+  
+  for( let i = 1; i <= 9; i++ ) {
+      if( numbers.includes(i) === false ) {
+          result += i
+      }
+  }
+  return result;
+}
