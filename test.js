@@ -371,3 +371,13 @@ function solution(n) {
   // 3진법으로 변환된 데이터를 10진법으로 변환
   return parseInt( reverse, 3 )
 }
+
+// 내적
+function solution(a, b) {
+  let answer = 0;
+  
+  for( let i = 0; i < a.length; i++ ) {
+      answer += (a[i] * b[i])
+  }
+  return answer;
+}
