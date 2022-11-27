@@ -389,3 +389,20 @@ SELECT FACTORY_ID
   FROM FOOD_FACTORY
  WHERE ADDRESS LIKE '%강원도%'
  ORDER BY FACTORY_ID;
+
+ // 콜라츠 추측
+ function solution(num) {
+  let count = 0;
+  
+  for( let i = 0; i < 500; i++ ) {
+      if( num === 1 ) {
+          return count
+      }
+      count++;
+      
+      num = num % 2 === 0
+              ? num / 2
+              : (num * 3) + 1
+  }
+  return -1;
+}
