@@ -406,3 +406,16 @@ SELECT FACTORY_ID
   }
   return -1;
 }
+
+// 완주하지못한선수
+function solution(participant, completion) {
+  for( let i = 0; i < completion.length; i++ ) {
+      if( participant.includes( completion[i] )) {
+          participant.splice(
+              participant.indexOf( completion[i] ),
+              1
+          )
+      }
+  }
+  return participant[0];
+}
