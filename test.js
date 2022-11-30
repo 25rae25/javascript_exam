@@ -437,3 +437,20 @@ function solution(n) {
   // 제곱근을 찾지 못한 경우 (-1 을 리턴)
   return answer;
 }
+
+// 두개 뽑아서 더하기
+function solution(numbers) {
+  const answer = [];
+  
+  for( let i = 0; i < numbers.length; i++ ) {
+      for( let l = i + 1; l < numbers.length; l++ ) {
+          const sum = numbers[i] + numbers[l];
+          
+          if( answer.includes(sum) === false ) {
+              answer.push(sum);
+          }
+      }
+  }
+  
+  return answer.sort( (a, b) => a - b );
+}
