@@ -544,3 +544,13 @@ function solution(my_string, n) {
 
   return answer;
 }
+
+// 개미 군단
+function solution(hp) {
+  let count = 0;
+  count += Math.floor(hp/5);
+  hp = hp%5;
+  count += Math.floor(hp/3);
+  hp = hp%3;
+  return count + hp;
+}
