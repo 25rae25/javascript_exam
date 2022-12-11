@@ -554,3 +554,12 @@ function solution(hp) {
   hp = hp%3;
   return count + hp;
 }
+
+// 수박
+function waterMelon(n){
+  var result = "";
+    for(var i = 0 ; i < n ; i++) {
+        result += i % 2 == 0 ? "수" : "박";
+  }
+  return result;
+}
