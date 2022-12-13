@@ -568,3 +568,17 @@ function waterMelon(n){
 function solution(my_string) {
     return [...my_string].filter(str => !['a', 'e', 'i', 'o', 'u'].includes(str)).join('');
 }
+
+// 직각삼각형
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i=1; i<=n; i++){
+            System.out.println("*".repeat(i));
+        }
+    }
+}
