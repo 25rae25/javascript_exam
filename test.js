@@ -596,3 +596,14 @@ function solution(n, t) {
 function solution(array) {
     return array.join('').split('7').length-1;
 }
+
+// 순서쌍의 개수
+function solution(n) {
+    var answer = 0;
+    for(let i = 0;i<=n;i++){
+        if(n % i === 0 ){
+            answer += 1
+        }
+    }
+    return answer;
+}
