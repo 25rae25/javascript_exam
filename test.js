@@ -607,3 +607,13 @@ function solution(n) {
     }
     return answer;
 }
+
+// 숫자찾기
+function solution(num, k) {
+  var answer = num.toString()
+  if (answer.includes(k)) {
+      return answer.indexOf(k) + 1;
+  } else {
+      return -1;
+  }
+}
