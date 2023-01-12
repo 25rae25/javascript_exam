@@ -654,3 +654,15 @@ ORDER BY DATETIME ASC LIMIT 3
 SELECT ANIMAL_ID, NAME,SEX_UPON_INTAKE from animal_ins
 WHERE NAME IN ("LUCY","ELLA","pickle","ROGAN","SABRINA","MITTY")
 ORDER BY ANIMAL_ID ASC
+
+// 외계행성의 나이
+function solution(age) {
+  var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+  var answer = "";
+  age = age.toString();
+
+  for(let i=0; i<age.length; i++){
+      answer += alphabet[age[i]];
+  }
+  return answer;
+}
